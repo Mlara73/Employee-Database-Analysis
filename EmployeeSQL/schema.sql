@@ -16,7 +16,7 @@ CREATE TABLE employees (
   ID INT PRIMARY KEY NOT NULL,
   title_id VARCHAR NOT NULL,
   FOREIGN KEY (title_id) REFERENCES titles(ID),
-  birth_date DATE,
+  birth_date DATE NOT NULL,
   first_name VARCHAR(255) NOT NULL,
   last_name VARCHAR(255) NOT NULL,
   sex VARCHAR(1) NOT NULL,
